@@ -1,3 +1,10 @@
+//Добавляем класс popup_is-animated всем попапам при загрузке страницы
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.popup').forEach(modal => {
+    modal.classList.add('popup_is-animated');
+  });
+});
+
 // Открытие модального окна
 function openModal(modal) {
   modal.classList.add('popup_is-animated');
