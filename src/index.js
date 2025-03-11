@@ -81,6 +81,7 @@ function openAvatarPopup() {
 
 // Редактирование профиля
 profileEditButton.addEventListener('click', openProfilePopup);
+
 profileForm.addEventListener('submit', (evt) => {
   evt.preventDefault();
   profileSaveButton.textContent = 'Сохранение...';
