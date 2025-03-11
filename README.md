@@ -1,2 +1,4 @@
 # Проектная работа Mesto
-https://github.com/BMIWB/mesto-project-ff.git
+Ссылка на GitHub: https://github.com/BMIWB/mesto-project-ff.git
+
+Ссылка на проект: https://bmiwb.github.io/mesto-project-ff/
