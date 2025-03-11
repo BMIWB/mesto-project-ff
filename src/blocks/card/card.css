@@ -13,3 +13,7 @@
   position: relative;
   overflow: hidden;
 }
+
+.card__delete-button_hidden {
+  display: none;
+}
