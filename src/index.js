@@ -99,6 +99,7 @@ profileForm.addEventListener('submit', (evt) => {
 
 // Добавление карточки
 addCardButton.addEventListener('click', () => openModal(addCardPopup));
+
 addCardForm.addEventListener('submit', (evt) => {
   evt.preventDefault();
   addSaveButton.textContent = 'Сохранение...';
@@ -117,6 +118,7 @@ addCardForm.addEventListener('submit', (evt) => {
 
 // Обновление аватара
 profileAvatar.addEventListener('click', openAvatarPopup);
+
 avatarForm.addEventListener('submit', (evt) => {
   evt.preventDefault();
   avatarSaveButton.textContent = 'Сохранение...';
