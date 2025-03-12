@@ -1,27 +1,13 @@
-//Добавляем класс popup_is-animated всем попапам при загрузке страницы
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.popup').forEach(modal => {
-    modal.classList.add('popup_is-animated');
-  });
-});
-
 // Открытие модального окна
 function openModal(modal) {
-  modal.classList.add('popup_is-animated');
   document.addEventListener('keydown', handleEscClose);
-  setTimeout(() => {
-    modal.classList.add('popup_is-opened');
-  }, 0);
+  modal.classList.add('popup_is-opened');
 }
 
 // Закрытие модального окна
 function closeModal(modal) {
-  modal.classList.remove('popup_is-opened');
+  modal.classList.remove('popup_is-opened', 'popup_is-animated');
   document.removeEventListener('keydown', handleEscClose);
-  modal.addEventListener('transitionend', function handleTransitionEnd() {
-    modal.classList.remove('popup_is-animated');
-    modal.removeEventListener('transitionend', handleTransitionEnd);
-  });
 }
 
 // Обработка закрытия модального окна клавишей Esc
