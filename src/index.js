@@ -79,6 +79,13 @@ function openAvatarPopup() {
 
 // --- Слушатели событий ---
 
+//Добавляем класс popup_is-animated всем попапам при загрузке страницы
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.popup').forEach(modal => {
+    modal.classList.add('popup_is-animated');
+  });
+});
+
 // Редактирование профиля
 profileEditButton.addEventListener('click', openProfilePopup);
 
